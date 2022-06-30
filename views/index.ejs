@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('partials/header') %>
+    </head>
+    <body>
+        <%- include('partials/navbar') %>
+        <div class="container-fluid">
+            <div class="row">
+                <div>
+                    <h1>
+                        <p>Welcome to <%=restaurant_name%> !! Fun Times Ahead!</p>
+                    </h1>
+                    <h2>
+                        <%=pizza_owner%> welcomes You!
+                    </h2>
+        
+                    <h2>Our Staff</h2>
+                    <p>
+                        <ul>
+        
+                        <% our_staff.forEach(staff=>{  %>
+                            <li><%=staff%></li>
+                        <% }); %>
+                        
+                        </ul>
+                    </p>
+        
+                    <h2>Our Menu</h2>
+                    <ul>
+                        <% for(let pizza of pizza_menu) { %>
+                            <li>Name: <%=pizza.name%></li>
+                            <li>Price: <%=pizza.price%></li>
+                            <li>Ingredients: </li>
+                                <ul>
+                                    <% pizza.ingredients.forEach(ingredient=> { %>
+                                            <li><%=ingredient%></li>
+                                    <% }) %>
+                                </ul>
+                            <br>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <%- include('partials/footer'); %>
+    </body>
+</html>
