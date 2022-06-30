@@ -20,3 +20,9 @@ Add 2 entries in the file:
 .env
 node_modules/
 ```
+
+# To run the project
+```
+npm install
+npm start
+```
