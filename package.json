@@ -1,0 +1,22 @@
+{
+  "name": "express-tutorial",
+  "version": "1.0.0",
+  "description": "a basic express tutorial with the use of ESJ",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "knex": "^2.1.0",
+    "pg": "^8.7.3"
+  }
+}
